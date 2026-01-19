@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Atiendex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root{--red:#E63946;--dark:#0D0D0D;--card:#141414;--gray:#888;--light:#F8F8F8;--white:#FFF}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Outfit',sans-serif;background:var(--dark);color:var(--light);line-height:1.7}
+        nav{position:fixed;top:0;left:0;right:0;padding:1.5rem 5%;display:flex;justify-content:space-between;align-items:center;background:rgba(13,13,13,.95);backdrop-filter:blur(10px);z-index:100}
+        .logo{font-family:'Space Mono',monospace;font-size:1.5rem;font-weight:700;color:var(--white);text-decoration:none;display:flex;align-items:center;gap:.5rem}
+        .logo-icon{width:40px;height:40px;background:var(--red);border-radius:10px;display:flex;align-items:center;justify-content:center}
+        .nav-back{color:var(--gray);text-decoration:none}.nav-back:hover{color:var(--red)}
+        .hero{padding:10rem 5% 4rem;text-align:center}
+        .hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;margin-bottom:1rem}
+        .hero p{color:var(--gray);font-size:1.2rem}
+        .container{max-width:900px;margin:0 auto;padding:0 5% 6rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+        .info h2{font-size:1.5rem;margin-bottom:2rem}
+        .method{background:var(--card);border:1px solid rgba(255,255,255,.05);border-radius:16px;padding:1.5rem;margin-bottom:1.5rem;transition:.3s}
+        .method:hover{border-color:rgba(230,57,70,.3);transform:translateY(-3px)}
+        .method h3{display:flex;align-items:center;gap:.75rem;font-size:1.1rem;margin-bottom:.5rem}
+        .method p{color:var(--gray);font-size:.95rem;margin-bottom:.5rem}
+        .method a{color:var(--red);text-decoration:none}.method a:hover{color:#FF6B6B}
+        .cta-box{background:linear-gradient(135deg,rgba(230,57,70,.2),rgba(230,57,70,.05));border:1px solid rgba(230,57,70,.3);border-radius:20px;padding:2.5rem;text-align:center}
+        .cta-box h2{font-size:1.8rem;margin-bottom:1rem}
+        .cta-box p{color:var(--gray);margin-bottom:2rem}
+        .btn-wa{display:inline-flex;align-items:center;gap:.75rem;background:#25D366;color:#fff;padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:600;font-size:1.1rem;transition:.3s}
+        .btn-wa:hover{background:#1da851;transform:translateY(-3px);box-shadow:0 10px 30px rgba(37,211,102,.3)}
+        footer{padding:3rem 5%;border-top:1px solid rgba(255,255,255,.05);text-align:center}
+        .footer-links{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
+        .footer-links a{color:var(--gray);text-decoration:none}.footer-links a:hover{color:var(--red)}
+        .footer-copy{margin-top:1.5rem;color:var(--gray);font-size:.85rem}
+        @media(max-width:768px){.container{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo"><div class="logo-icon">A</div>Atiendex</a>
+        <a href="index.html" class="nav-back">← Volver al inicio</a>
+    </nav>
+    <section class="hero">
+        <h1>Contacto</h1>
+        <p>¿Tenés preguntas? ¿Querés saber más? Estamos para ayudarte.</p>
+    </section>
+    <div class="container">
+        <div class="info">
+            <h2>Cómo contactarnos</h2>
+            <div class="method">
+                <h3>💬 WhatsApp</h3>
+                <p>La forma más rápida de contactarnos. Respondemos en pocas horas.</p>
+                <a href="https://wa.me/TUNUMERO?text=Hola!%20Quiero%20info%20sobre%20Atiendex">Escribinos por WhatsApp →</a>
+            </div>
+            <div class="method">
+                <h3>📧 Email</h3>
+                <p>Para consultas formales o documentación.</p>
+                <a href="mailto:info@atiendex.com">info@atiendex.com</a>
+            </div>
+            <div class="method">
+                <h3>🕐 Horarios</h3>
+                <p>Respondemos generalmente dentro de las 24 horas, de lunes a viernes.</p>
+                <p><strong>Lun - Vie:</strong> 9:00 - 18:00</p>
+            </div>
+        </div>
+        <div class="cta-box">
+            <h2>¿Listo para empezar?</h2>
+            <p>La forma más rápida de tener tu asistente virtual es escribirnos por WhatsApp.</p>
+            <a href="https://wa.me/TUNUMERO?text=Hola!%20Quiero%20info%20sobre%20Atiendex" class="btn-wa">💬 Escribinos por WhatsApp</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Inicio</a>
+            <a href="terminos.html">Términos</a>
+            <a href="privacidad.html">Privacidad</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+        <p class="footer-copy">© 2025 Atiendex. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
