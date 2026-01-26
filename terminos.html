@@ -361,11 +361,11 @@ fr:{title:"Conditions Générales",update:"Dernière mise à jour: Janvier 2026"
 <p>Ces conditions sont régies par la loi argentine. Pour les clients européens, les réglementations locales de protection des consommateurs s'appliquent également.</p>
 `}
 };
-const langs=['it','es','en','pt','de','fr'];
-let curr='it';
-function detect(){const b=navigator.language?.split('-')[0];return T[b]?b:'it'}
-function set(l){curr=l;document.getElementById('title').textContent=T[l].title;document.getElementById('update').textContent=T[l].update;document.getElementById('content').innerHTML=T[l].content;document.getElementById('currLang').innerHTML=({it:'🇮🇹 Italiano',es:'🇪🇸 Español',en:'🇬🇧 English',pt:'🇧🇷 Português',de:'🇩🇪 Deutsch',fr:'🇫🇷 Français'})[l];document.querySelectorAll('.lang-opt').forEach(o=>o.classList.toggle('active',o.dataset.lang===l))}
-document.addEventListener('DOMContentLoaded',()=>{const drop=document.getElementById('langDrop');langs.forEach(l=>{const btn=document.createElement('button');btn.className='lang-opt';btn.dataset.lang=l;btn.innerHTML=({it:'🇮🇹 Italiano',es:'🇪🇸 Español',en:'🇬🇧 English',pt:'🇧🇷 Português',de:'🇩🇪 Deutsch',fr:'🇫🇷 Français'})[l];btn.onclick=()=>set(l);drop.appendChild(btn)});set(localStorage.getItem('atiendex_lang')||detect())});
+const langNames={it:'🇮🇹 Italiano',es:'🇪🇸 Español',en:'🇬🇧 English',pt:'🇧🇷 Português',de:'🇩🇪 Deutsch',fr:'🇫🇷 Français',ar:'🇦🇷 Argentina',us:'🇺🇸 USA'};
+const langMap={ar:'es',us:'en'};
+function detect(){const b=navigator.language?.toLowerCase();if(b.startsWith('pt'))return'pt';if(b.startsWith('es'))return'es';if(b.startsWith('en'))return'en';if(b.startsWith('de'))return'de';if(b.startsWith('fr'))return'fr';return'it'}
+function set(l){const tl=langMap[l]||l;if(!T[tl])return set('it');document.getElementById('title').textContent=T[tl].title;document.getElementById('update').textContent=T[tl].update;document.getElementById('content').innerHTML=T[tl].content;document.getElementById('currLang').innerHTML=langNames[l]||langNames[tl];document.querySelector('.lang-sel').style.display='none'}
+document.addEventListener('DOMContentLoaded',()=>{const saved=localStorage.getItem('atiendex_lang');set(saved||detect())});
     </script>
 </body>
 </html>
