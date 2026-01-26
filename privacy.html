@@ -4,244 +4,510 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Atiendex</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --red-primary: #E63946;
-            --red-dark: #B82D38;
-            --dark: #0D0D0D;
-            --dark-soft: #1A1A1A;
-            --gray: #888888;
-            --light: #F8F8F8;
-            --white: #FFFFFF;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Outfit', sans-serif;
-            background-color: var(--dark);
-            color: var(--light);
-            line-height: 1.8;
-        }
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            padding: 1.5rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 100;
-            background: rgba(13,13,13,0.95);
-            backdrop-filter: blur(10px);
-        }
-        .logo {
-            font-family: 'Space Mono', monospace;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--white);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: var(--red-primary);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .nav-back {
-            color: var(--gray);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        .nav-back:hover { color: var(--red-primary); }
-        .legal-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 8rem 5% 4rem;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            color: var(--white);
-        }
-        .last-update {
-            color: var(--gray);
-            margin-bottom: 3rem;
-        }
-        h2 {
-            font-size: 1.4rem;
-            margin: 2.5rem 0 1rem;
-            color: var(--white);
-        }
-        p, li {
-            color: var(--gray);
-            margin-bottom: 1rem;
-        }
-        ul {
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        a { color: var(--red-primary); }
-        footer {
-            padding: 3rem 5%;
-            border-top: 1px solid rgba(255,255,255,0.05);
-            text-align: center;
-        }
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-        .footer-links a {
-            color: var(--gray);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        .footer-links a:hover { color: var(--red-primary); }
-        .footer-copy {
-            margin-top: 1.5rem;
-            color: var(--gray);
-            font-size: 0.85rem;
-        }
+        :root{--red:#E63946;--dark:#0D0D0D;--dark2:#1A1A1A;--gray:#888;--light:#F8F8F8;--white:#FFF}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Outfit',sans-serif;background:var(--dark);color:var(--light);line-height:1.8}
+        nav{padding:1.5rem 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.1)}
+        .logo{font-size:1.5rem;font-weight:700;color:var(--white);text-decoration:none;display:flex;align-items:center;gap:0.5rem}
+        .logo-icon{width:40px;height:40px;background:var(--red);border-radius:10px;display:flex;align-items:center;justify-content:center}
+        .lang-sel{position:relative}.lang-btn{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:var(--white);padding:0.5rem 1rem;border-radius:8px;cursor:pointer;display:flex;align-items:center;gap:0.5rem;font-family:inherit}.lang-drop{position:absolute;top:100%;right:0;margin-top:0.5rem;background:var(--dark2);border:1px solid rgba(255,255,255,0.1);border-radius:12px;opacity:0;visibility:hidden;transition:0.3s;z-index:200;min-width:150px}.lang-sel:hover .lang-drop{opacity:1;visibility:visible}.lang-opt{display:flex;align-items:center;gap:0.5rem;padding:0.75rem 1rem;color:var(--light);cursor:pointer;border:none;background:transparent;width:100%;font-family:inherit;font-size:0.95rem;text-align:left}.lang-opt:hover{background:rgba(230,57,70,0.2)}
+        .container{max-width:800px;margin:0 auto;padding:4rem 2rem}
+        h1{font-size:2.5rem;margin-bottom:0.5rem;color:var(--white)}
+        .update{color:var(--gray);margin-bottom:3rem}
+        h2{font-size:1.4rem;color:var(--red);margin:2.5rem 0 1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.1)}
+        h2:first-of-type{border-top:none;margin-top:0}
+        p,li{color:var(--light);margin-bottom:1rem}
+        ul{padding-left:1.5rem;margin-bottom:1rem}
+        li{margin-bottom:0.5rem}
+        strong{color:var(--white)}
+        a{color:var(--red)}
+        footer{padding:2rem 5%;border-top:1px solid rgba(255,255,255,0.1);text-align:center;color:var(--gray)}
     </style>
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo">
-            <div class="logo-icon">A</div>
-            Atiendex
-        </a>
-        <a href="index.html" class="nav-back">← Torna alla home</a>
+        <a href="index.html" class="logo"><div class="logo-icon">A</div>Atiendex</a>
+        <div class="lang-sel">
+            <button class="lang-btn" id="currLang">🇮🇹 Italiano</button>
+            <div class="lang-drop" id="langDrop"></div>
+        </div>
     </nav>
-
-    <div class="legal-container">
-        <h1>Privacy Policy</h1>
-        <p class="last-update">Ultimo aggiornamento: Gennaio 2025</p>
-
-        <p>La presente Privacy Policy descrive come Atiendex raccoglie, utilizza e protegge i dati personali degli utenti in conformità con il Regolamento Generale sulla Protezione dei Dati (GDPR) e la normativa italiana sulla privacy.</p>
-
-        <h2>1. Titolare del Trattamento</h2>
-        <p>Il titolare del trattamento dei dati personali è:</p>
-        <p>Atiendex<br>
-        Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6b02050d042b0a1f020e050f0e1345080406">[email&#160;protected]</a><br>
-        WhatsApp: <a href="https://wa.me/TUNUMERO">Contattaci</a></p>
-
-        <h2>2. Dati Raccolti</h2>
-        <p>Raccogliamo i seguenti tipi di dati:</p>
-        
-        <p><strong>Dati forniti direttamente dal cliente:</strong></p>
-        <ul>
-            <li>Nome e cognome</li>
-            <li>Nome dell'attività commerciale</li>
-            <li>Numero di telefono/WhatsApp</li>
-            <li>Indirizzo email</li>
-            <li>Informazioni sull'attività (servizi, prezzi, orari)</li>
-        </ul>
-
-        <p><strong>Dati dei clienti finali (gestiti per conto del cliente):</strong></p>
-        <ul>
-            <li>Numeri di telefono</li>
-            <li>Nomi</li>
-            <li>Storico appuntamenti</li>
-            <li>Conversazioni WhatsApp</li>
-        </ul>
-
-        <p><strong>Dati raccolti automaticamente:</strong></p>
-        <ul>
-            <li>Log di utilizzo del servizio</li>
-            <li>Dati tecnici per il funzionamento del bot</li>
-        </ul>
-
-        <h2>3. Finalità del Trattamento</h2>
-        <p>I dati vengono trattati per le seguenti finalità:</p>
-        <ul>
-            <li>Fornitura del servizio di assistente virtuale</li>
-            <li>Gestione degli appuntamenti</li>
-            <li>Invio di promemoria automatici</li>
-            <li>Comunicazioni relative al servizio</li>
-            <li>Assistenza clienti</li>
-            <li>Fatturazione e adempimenti contabili</li>
-            <li>Miglioramento del servizio</li>
-        </ul>
-
-        <h2>4. Base Giuridica</h2>
-        <p>Il trattamento dei dati si basa su:</p>
-        <ul>
-            <li>Esecuzione del contratto di servizio</li>
-            <li>Consenso dell'interessato</li>
-            <li>Legittimo interesse del titolare</li>
-            <li>Adempimento di obblighi legali</li>
-        </ul>
-
-        <h2>5. Conservazione dei Dati</h2>
-        <p>I dati vengono conservati per il tempo necessario alle finalità per cui sono stati raccolti:</p>
-        <ul>
-            <li>Dati del cliente: per tutta la durata del contratto e per 10 anni successivi (obblighi fiscali)</li>
-            <li>Dati dei clienti finali: per la durata del contratto, salvo diversa indicazione del cliente</li>
-            <li>Log tecnici: massimo 12 mesi</li>
-        </ul>
-
-        <h2>6. Condivisione dei Dati</h2>
-        <p>I dati possono essere condivisi con:</p>
-        <ul>
-            <li>Fornitori di servizi tecnologici (hosting, API di intelligenza artificiale)</li>
-            <li>Consulenti professionali (commercialisti, legali)</li>
-            <li>Autorità competenti quando richiesto dalla legge</li>
-        </ul>
-        <p>Non vendiamo mai i dati personali a terze parti.</p>
-
-        <h2>7. Trasferimento dei Dati</h2>
-        <p>Alcuni dati potrebbero essere trasferiti verso paesi extra-UE (es. server negli USA per servizi cloud). In tal caso, garantiamo che il trasferimento avvenga in conformità con il GDPR, utilizzando clausole contrattuali standard o altri meccanismi approvati.</p>
-
-        <h2>8. Diritti degli Interessati</h2>
-        <p>Ai sensi del GDPR, hai il diritto di:</p>
-        <ul>
-            <li><strong>Accesso:</strong> ottenere conferma del trattamento e copia dei dati</li>
-            <li><strong>Rettifica:</strong> correggere dati inesatti o incompleti</li>
-            <li><strong>Cancellazione:</strong> richiedere la cancellazione dei dati ("diritto all'oblio")</li>
-            <li><strong>Limitazione:</strong> limitare il trattamento in determinati casi</li>
-            <li><strong>Portabilità:</strong> ricevere i dati in formato strutturato</li>
-            <li><strong>Opposizione:</strong> opporti al trattamento per motivi legittimi</li>
-            <li><strong>Revoca del consenso:</strong> revocare il consenso in qualsiasi momento</li>
-        </ul>
-        <p>Per esercitare questi diritti, contattaci via email o WhatsApp.</p>
-
-        <h2>9. Sicurezza dei Dati</h2>
-        <p>Implementiamo misure di sicurezza tecniche e organizzative appropriate per proteggere i dati, tra cui:</p>
-        <ul>
-            <li>Crittografia dei dati in transito e a riposo</li>
-            <li>Accesso limitato ai dati solo al personale autorizzato</li>
-            <li>Backup regolari</li>
-            <li>Monitoraggio della sicurezza</li>
-        </ul>
-
-        <h2>10. Cookie</h2>
-        <p>Il nostro sito web utilizza solo cookie tecnici essenziali per il funzionamento. Non utilizziamo cookie di profilazione o di terze parti per scopi pubblicitari.</p>
-
-        <h2>11. Modifiche alla Privacy Policy</h2>
-        <p>Ci riserviamo il diritto di modificare questa Privacy Policy. Le modifiche saranno pubblicate su questa pagina con la data di aggiornamento. Per modifiche significative, invieremo una notifica via email o WhatsApp.</p>
-
-        <h2>12. Reclami</h2>
-        <p>Se ritieni che il trattamento dei tuoi dati violi il GDPR, hai il diritto di presentare un reclamo al Garante per la Protezione dei Dati Personali (www.garanteprivacy.it).</p>
-
-        <h2>13. Contatti</h2>
-        <p>Per qualsiasi domanda sulla privacy o per esercitare i tuoi diritti:</p>
-        <ul>
-            <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="84edeae2ebc4e5f0ede1eae0e1fcaae7ebe9">[email&#160;protected]</a></li>
-            <li>WhatsApp: <a href="https://wa.me/TUNUMERO">Contattaci</a></li>
-        </ul>
+    <div class="container">
+        <h1 id="title">Politica sulla Privacy</h1>
+        <p class="update" id="update">Ultimo aggiornamento: Gennaio 2026</p>
+        <div id="content"></div>
     </div>
+    <footer>© 2026 Atiendex - Alluma Publicidad SRL</footer>
+    <script>
+const T={
+it:{title:"Politica sulla Privacy",update:"Ultimo aggiornamento: Gennaio 2026",content:`
+<h2>1. Titolare del Trattamento</h2>
+<p><strong>Alluma Publicidad SRL</strong><br>
+Panamericana Km 42.5, Del Viso, Argentina<br>
+Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 
-    <footer>
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="termini.html">T
+<h2>2. Dati che Raccogliamo</h2>
+<p>Raccogliamo i seguenti tipi di dati:</p>
+<ul>
+<li><strong>Dati del business:</strong> Nome dell'attività, indirizzo, servizi offerti, orari, prezzi.</li>
+<li><strong>Dati di contatto:</strong> Nome, email, numero di telefono WhatsApp.</li>
+<li><strong>Dati dei clienti:</strong> Nomi e numeri di telefono dei clienti che interagiscono con il bot.</li>
+<li><strong>Conversazioni:</strong> Messaggi scambiati tra il bot e i clienti per migliorare il servizio.</li>
+<li><strong>Dati di pagamento:</strong> Informazioni necessarie per la fatturazione.</li>
+</ul>
+
+<h2>3. Finalità del Trattamento</h2>
+<p>Utilizziamo i dati per:</p>
+<ul>
+<li>Fornire e migliorare il servizio di bot WhatsApp.</li>
+<li>Gestire appuntamenti e promemoria.</li>
+<li>Elaborare pagamenti e fatture.</li>
+<li>Comunicare aggiornamenti sul servizio.</li>
+<li>Rispettare obblighi legali.</li>
+</ul>
+
+<h2>4. Base Giuridica (GDPR)</h2>
+<p>Per i clienti europei, trattiamo i dati sulla base di:</p>
+<ul>
+<li><strong>Esecuzione del contratto:</strong> Per fornire i servizi richiesti.</li>
+<li><strong>Consenso:</strong> Per comunicazioni di marketing.</li>
+<li><strong>Legittimo interesse:</strong> Per migliorare i nostri servizi.</li>
+<li><strong>Obbligo legale:</strong> Per conformità fiscale e normativa.</li>
+</ul>
+
+<h2>5. Condivisione dei Dati</h2>
+<p>Condividiamo i dati con:</p>
+<ul>
+<li><strong>OpenAI:</strong> Per l'elaborazione delle risposte AI (i messaggi sono processati in modo sicuro).</li>
+<li><strong>WhatsApp/Meta:</strong> Per l'invio e ricezione dei messaggi.</li>
+<li><strong>Google:</strong> Per la gestione del calendario (se attivato).</li>
+</ul>
+<p>Non vendiamo mai i tuoi dati a terzi.</p>
+
+<h2>6. Conservazione dei Dati</h2>
+<ul>
+<li><strong>Dati del servizio:</strong> Conservati per la durata del contratto + 2 anni.</li>
+<li><strong>Conversazioni:</strong> Conservate per 90 giorni per miglioramento del servizio.</li>
+<li><strong>Dati fiscali:</strong> Conservati per 10 anni come richiesto dalla legge.</li>
+</ul>
+
+<h2>7. I Tuoi Diritti (GDPR)</h2>
+<p>Hai il diritto di:</p>
+<ul>
+<li><strong>Accesso:</strong> Richiedere una copia dei tuoi dati.</li>
+<li><strong>Rettifica:</strong> Correggere dati inesatti.</li>
+<li><strong>Cancellazione:</strong> Richiedere l'eliminazione dei dati ("diritto all'oblio").</li>
+<li><strong>Portabilità:</strong> Ricevere i dati in formato leggibile.</li>
+<li><strong>Opposizione:</strong> Opporti a determinati trattamenti.</li>
+</ul>
+<p>Per esercitare questi diritti, contattaci a info@atiendex.com.</p>
+
+<h2>8. Sicurezza</h2>
+<p>Proteggiamo i tuoi dati con:</p>
+<ul>
+<li>Crittografia end-to-end su WhatsApp.</li>
+<li>Server sicuri con accesso limitato.</li>
+<li>Backup regolari e protetti.</li>
+</ul>
+
+<h2>9. Cookie</h2>
+<p>Il nostro sito utilizza solo cookie tecnici necessari per il funzionamento. Non utilizziamo cookie di tracciamento o pubblicità.</p>
+
+<h2>10. Modifiche alla Privacy Policy</h2>
+<p>Ci riserviamo il diritto di aggiornare questa policy. Le modifiche significative saranno comunicate via email.</p>
+
+<h2>11. Contatti</h2>
+<p>Per domande sulla privacy, contattaci:<br>
+Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+`},
+es:{title:"Política de Privacidad",update:"Última actualización: Enero 2026",content:`
+<h2>1. Responsable del Tratamiento</h2>
+<p><strong>Alluma Publicidad SRL</strong><br>
+Panamericana Km 42.5, Del Viso, Argentina<br>
+Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+
+<h2>2. Datos que Recopilamos</h2>
+<p>Recopilamos los siguientes tipos de datos:</p>
+<ul>
+<li><strong>Datos del negocio:</strong> Nombre de la actividad, dirección, servicios ofrecidos, horarios, precios.</li>
+<li><strong>Datos de contacto:</strong> Nombre, email, número de teléfono WhatsApp.</li>
+<li><strong>Datos de clientes:</strong> Nombres y números de teléfono de los clientes que interactúan con el bot.</li>
+<li><strong>Conversaciones:</strong> Mensajes intercambiados entre el bot y los clientes para mejorar el servicio.</li>
+<li><strong>Datos de pago:</strong> Información necesaria para la facturación.</li>
+</ul>
+
+<h2>3. Finalidad del Tratamiento</h2>
+<p>Utilizamos los datos para:</p>
+<ul>
+<li>Proporcionar y mejorar el servicio de bot WhatsApp.</li>
+<li>Gestionar turnos y recordatorios.</li>
+<li>Procesar pagos y facturas.</li>
+<li>Comunicar actualizaciones del servicio.</li>
+<li>Cumplir con obligaciones legales.</li>
+</ul>
+
+<h2>4. Compartición de Datos</h2>
+<p>Compartimos datos con:</p>
+<ul>
+<li><strong>OpenAI:</strong> Para el procesamiento de respuestas IA (los mensajes se procesan de forma segura).</li>
+<li><strong>WhatsApp/Meta:</strong> Para el envío y recepción de mensajes.</li>
+<li><strong>Google:</strong> Para la gestión del calendario (si está activado).</li>
+</ul>
+<p>Nunca vendemos tus datos a terceros.</p>
+
+<h2>5. Conservación de Datos</h2>
+<ul>
+<li><strong>Datos del servicio:</strong> Conservados durante la duración del contrato + 2 años.</li>
+<li><strong>Conversaciones:</strong> Conservadas por 90 días para mejora del servicio.</li>
+<li><strong>Datos fiscales:</strong> Conservados por 10 años según la ley.</li>
+</ul>
+
+<h2>6. Tus Derechos</h2>
+<p>Tenés derecho a:</p>
+<ul>
+<li><strong>Acceso:</strong> Solicitar una copia de tus datos.</li>
+<li><strong>Rectificación:</strong> Corregir datos inexactos.</li>
+<li><strong>Supresión:</strong> Solicitar la eliminación de datos.</li>
+<li><strong>Portabilidad:</strong> Recibir los datos en formato legible.</li>
+</ul>
+<p>Para ejercer estos derechos, contactanos a info@atiendex.com.</p>
+
+<h2>7. Seguridad</h2>
+<p>Protegemos tus datos con:</p>
+<ul>
+<li>Encriptación end-to-end en WhatsApp.</li>
+<li>Servidores seguros con acceso limitado.</li>
+<li>Backups regulares y protegidos.</li>
+</ul>
+
+<h2>8. Cookies</h2>
+<p>Nuestro sitio utiliza solo cookies técnicas necesarias para el funcionamiento. No utilizamos cookies de seguimiento o publicidad.</p>
+
+<h2>9. Modificaciones</h2>
+<p>Nos reservamos el derecho de actualizar esta política. Los cambios significativos serán comunicados por email.</p>
+
+<h2>10. Contacto</h2>
+<p>Para preguntas sobre privacidad, contactanos:<br>
+Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+`},
+en:{title:"Privacy Policy",update:"Last updated: January 2026",content:`
+<h2>1. Data Controller</h2>
+<p><strong>Alluma Publicidad SRL</strong><br>
+Panamericana Km 42.5, Del Viso, Argentina<br>
+Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+
+<h2>2. Data We Collect</h2>
+<p>We collect the following types of data:</p>
+<ul>
+<li><strong>Business data:</strong> Business name, address, services offered, hours, prices.</li>
+<li><strong>Contact data:</strong> Name, email, WhatsApp phone number.</li>
+<li><strong>Customer data:</strong> Names and phone numbers of customers interacting with the bot.</li>
+<li><strong>Conversations:</strong> Messages exchanged between the bot and customers to improve service.</li>
+<li><strong>Payment data:</strong> Information necessary for billing.</li>
+</ul>
+
+<h2>3. Purpose of Processing</h2>
+<p>We use data to:</p>
+<ul>
+<li>Provide and improve the WhatsApp bot service.</li>
+<li>Manage appointments and reminders.</li>
+<li>Process payments and invoices.</li>
+<li>Communicate service updates.</li>
+<li>Comply with legal obligations.</li>
+</ul>
+
+<h2>4. Legal Basis (GDPR)</h2>
+<p>For European customers, we process data based on:</p>
+<ul>
+<li><strong>Contract performance:</strong> To provide requested services.</li>
+<li><strong>Consent:</strong> For marketing communications.</li>
+<li><strong>Legitimate interest:</strong> To improve our services.</li>
+<li><strong>Legal obligation:</strong> For tax and regulatory compliance.</li>
+</ul>
+
+<h2>5. Data Sharing</h2>
+<p>We share data with:</p>
+<ul>
+<li><strong>OpenAI:</strong> For AI response processing (messages are processed securely).</li>
+<li><strong>WhatsApp/Meta:</strong> For sending and receiving messages.</li>
+<li><strong>Google:</strong> For calendar management (if enabled).</li>
+</ul>
+<p>We never sell your data to third parties.</p>
+
+<h2>6. Data Retention</h2>
+<ul>
+<li><strong>Service data:</strong> Retained for contract duration + 2 years.</li>
+<li><strong>Conversations:</strong> Retained for 90 days for service improvement.</li>
+<li><strong>Tax data:</strong> Retained for 10 years as required by law.</li>
+</ul>
+
+<h2>7. Your Rights (GDPR)</h2>
+<p>You have the right to:</p>
+<ul>
+<li><strong>Access:</strong> Request a copy of your data.</li>
+<li><strong>Rectification:</strong> Correct inaccurate data.</li>
+<li><strong>Erasure:</strong> Request deletion of data ("right to be forgotten").</li>
+<li><strong>Portability:</strong> Receive data in readable format.</li>
+<li><strong>Object:</strong> Object to certain processing.</li>
+</ul>
+<p>To exercise these rights, contact us at info@atiendex.com.</p>
+
+<h2>8. Security</h2>
+<p>We protect your data with:</p>
+<ul>
+<li>End-to-end encryption on WhatsApp.</li>
+<li>Secure servers with limited access.</li>
+<li>Regular protected backups.</li>
+</ul>
+
+<h2>9. Cookies</h2>
+<p>Our site uses only technical cookies necessary for operation. We do not use tracking or advertising cookies.</p>
+
+<h2>10. Changes to Privacy Policy</h2>
+<p>We reserve the right to update this policy. Significant changes will be communicated via email.</p>
+
+<h2>11. Contact</h2>
+<p>For privacy questions, contact us:<br>
+Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+`},
+pt:{title:"Política de Privacidade",update:"Última atualização: Janeiro 2026",content:`
+<h2>1. Controlador de Dados</h2>
+<p><strong>Alluma Publicidad SRL</strong><br>
+Panamericana Km 42.5, Del Viso, Argentina<br>
+Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+
+<h2>2. Dados que Coletamos</h2>
+<p>Coletamos os seguintes tipos de dados:</p>
+<ul>
+<li><strong>Dados do negócio:</strong> Nome da atividade, endereço, serviços oferecidos, horários, preços.</li>
+<li><strong>Dados de contato:</strong> Nome, email, número de telefone WhatsApp.</li>
+<li><strong>Dados de clientes:</strong> Nomes e números de telefone dos clientes que interagem com o bot.</li>
+<li><strong>Conversas:</strong> Mensagens trocadas entre o bot e os clientes para melhorar o serviço.</li>
+<li><strong>Dados de pagamento:</strong> Informações necessárias para faturamento.</li>
+</ul>
+
+<h2>3. Finalidade do Tratamento</h2>
+<p>Utilizamos os dados para:</p>
+<ul>
+<li>Fornecer e melhorar o serviço de bot WhatsApp.</li>
+<li>Gerenciar agendamentos e lembretes.</li>
+<li>Processar pagamentos e faturas.</li>
+<li>Comunicar atualizações do serviço.</li>
+<li>Cumprir obrigações legais.</li>
+</ul>
+
+<h2>4. Compartilhamento de Dados</h2>
+<p>Compartilhamos dados com:</p>
+<ul>
+<li><strong>OpenAI:</strong> Para processamento de respostas IA (mensagens são processadas de forma segura).</li>
+<li><strong>WhatsApp/Meta:</strong> Para envio e recebimento de mensagens.</li>
+<li><strong>Google:</strong> Para gerenciamento de calendário (se ativado).</li>
+</ul>
+<p>Nunca vendemos seus dados a terceiros.</p>
+
+<h2>5. Retenção de Dados</h2>
+<ul>
+<li><strong>Dados do serviço:</strong> Retidos durante a duração do contrato + 2 anos.</li>
+<li><strong>Conversas:</strong> Retidas por 90 dias para melhoria do serviço.</li>
+<li><strong>Dados fiscais:</strong> Retidos por 10 anos conforme exigido por lei.</li>
+</ul>
+
+<h2>6. Seus Direitos</h2>
+<p>Você tem direito a:</p>
+<ul>
+<li><strong>Acesso:</strong> Solicitar uma cópia dos seus dados.</li>
+<li><strong>Retificação:</strong> Corrigir dados imprecisos.</li>
+<li><strong>Exclusão:</strong> Solicitar a eliminação dos dados.</li>
+<li><strong>Portabilidade:</strong> Receber dados em formato legível.</li>
+</ul>
+<p>Para exercer esses direitos, contate-nos em info@atiendex.com.</p>
+
+<h2>7. Segurança</h2>
+<p>Protegemos seus dados com:</p>
+<ul>
+<li>Criptografia de ponta a ponta no WhatsApp.</li>
+<li>Servidores seguros com acesso limitado.</li>
+<li>Backups regulares e protegidos.</li>
+</ul>
+
+<h2>8. Cookies</h2>
+<p>Nosso site usa apenas cookies técnicos necessários para operação. Não usamos cookies de rastreamento ou publicidade.</p>
+
+<h2>9. Alterações</h2>
+<p>Reservamo-nos o direito de atualizar esta política. Mudanças significativas serão comunicadas por email.</p>
+
+<h2>10. Contato</h2>
+<p>Para perguntas sobre privacidade, contate-nos:<br>
+Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+`},
+de:{title:"Datenschutzrichtlinie",update:"Letzte Aktualisierung: Januar 2026",content:`
+<h2>1. Verantwortlicher</h2>
+<p><strong>Alluma Publicidad SRL</strong><br>
+Panamericana Km 42.5, Del Viso, Argentinien<br>
+E-Mail: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+
+<h2>2. Daten, die wir erheben</h2>
+<p>Wir erheben folgende Arten von Daten:</p>
+<ul>
+<li><strong>Geschäftsdaten:</strong> Geschäftsname, Adresse, angebotene Dienstleistungen, Öffnungszeiten, Preise.</li>
+<li><strong>Kontaktdaten:</strong> Name, E-Mail, WhatsApp-Telefonnummer.</li>
+<li><strong>Kundendaten:</strong> Namen und Telefonnummern der Kunden, die mit dem Bot interagieren.</li>
+<li><strong>Gespräche:</strong> Nachrichten zwischen Bot und Kunden zur Serviceverbesserung.</li>
+<li><strong>Zahlungsdaten:</strong> Für die Rechnungsstellung erforderliche Informationen.</li>
+</ul>
+
+<h2>3. Zweck der Verarbeitung</h2>
+<p>Wir verwenden Daten um:</p>
+<ul>
+<li>Den WhatsApp-Bot-Service bereitzustellen und zu verbessern.</li>
+<li>Termine und Erinnerungen zu verwalten.</li>
+<li>Zahlungen und Rechnungen zu verarbeiten.</li>
+<li>Service-Updates zu kommunizieren.</li>
+<li>Gesetzliche Verpflichtungen zu erfüllen.</li>
+</ul>
+
+<h2>4. Rechtsgrundlage (DSGVO)</h2>
+<p>Für europäische Kunden verarbeiten wir Daten auf Basis von:</p>
+<ul>
+<li><strong>Vertragserfüllung:</strong> Um angeforderte Dienste bereitzustellen.</li>
+<li><strong>Einwilligung:</strong> Für Marketing-Kommunikation.</li>
+<li><strong>Berechtigtes Interesse:</strong> Um unsere Dienste zu verbessern.</li>
+<li><strong>Rechtliche Verpflichtung:</strong> Für steuerliche und regulatorische Compliance.</li>
+</ul>
+
+<h2>5. Datenweitergabe</h2>
+<p>Wir teilen Daten mit:</p>
+<ul>
+<li><strong>OpenAI:</strong> Für KI-Antwortverarbeitung (Nachrichten werden sicher verarbeitet).</li>
+<li><strong>WhatsApp/Meta:</strong> Für Senden und Empfangen von Nachrichten.</li>
+<li><strong>Google:</strong> Für Kalenderverwaltung (falls aktiviert).</li>
+</ul>
+<p>Wir verkaufen Ihre Daten niemals an Dritte.</p>
+
+<h2>6. Datenspeicherung</h2>
+<ul>
+<li><strong>Servicedaten:</strong> Aufbewahrt für Vertragsdauer + 2 Jahre.</li>
+<li><strong>Gespräche:</strong> 90 Tage zur Serviceverbesserung aufbewahrt.</li>
+<li><strong>Steuerdaten:</strong> 10 Jahre wie gesetzlich vorgeschrieben.</li>
+</ul>
+
+<h2>7. Ihre Rechte (DSGVO)</h2>
+<p>Sie haben das Recht auf:</p>
+<ul>
+<li><strong>Auskunft:</strong> Kopie Ihrer Daten anfordern.</li>
+<li><strong>Berichtigung:</strong> Unrichtige Daten korrigieren.</li>
+<li><strong>Löschung:</strong> Datenlöschung verlangen ("Recht auf Vergessenwerden").</li>
+<li><strong>Datenübertragbarkeit:</strong> Daten in lesbarem Format erhalten.</li>
+<li><strong>Widerspruch:</strong> Bestimmten Verarbeitungen widersprechen.</li>
+</ul>
+<p>Kontaktieren Sie uns unter info@atiendex.com.</p>
+
+<h2>8. Sicherheit</h2>
+<p>Wir schützen Ihre Daten mit:</p>
+<ul>
+<li>Ende-zu-Ende-Verschlüsselung bei WhatsApp.</li>
+<li>Sicheren Servern mit beschränktem Zugang.</li>
+<li>Regelmäßigen geschützten Backups.</li>
+</ul>
+
+<h2>9. Cookies</h2>
+<p>Unsere Website verwendet nur technisch notwendige Cookies. Wir verwenden keine Tracking- oder Werbe-Cookies.</p>
+
+<h2>10. Änderungen</h2>
+<p>Wir behalten uns das Recht vor, diese Richtlinie zu aktualisieren. Wesentliche Änderungen werden per E-Mail mitgeteilt.</p>
+
+<h2>11. Kontakt</h2>
+<p>Bei Datenschutzfragen kontaktieren Sie uns:<br>
+E-Mail: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+`},
+fr:{title:"Politique de Confidentialité",update:"Dernière mise à jour: Janvier 2026",content:`
+<h2>1. Responsable du Traitement</h2>
+<p><strong>Alluma Publicidad SRL</strong><br>
+Panamericana Km 42.5, Del Viso, Argentine<br>
+Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+
+<h2>2. Données que nous Collectons</h2>
+<p>Nous collectons les types de données suivants:</p>
+<ul>
+<li><strong>Données commerciales:</strong> Nom de l'entreprise, adresse, services proposés, horaires, prix.</li>
+<li><strong>Données de contact:</strong> Nom, email, numéro WhatsApp.</li>
+<li><strong>Données clients:</strong> Noms et numéros de téléphone des clients interagissant avec le bot.</li>
+<li><strong>Conversations:</strong> Messages échangés entre le bot et les clients pour améliorer le service.</li>
+<li><strong>Données de paiement:</strong> Informations nécessaires à la facturation.</li>
+</ul>
+
+<h2>3. Finalité du Traitement</h2>
+<p>Nous utilisons les données pour:</p>
+<ul>
+<li>Fournir et améliorer le service de bot WhatsApp.</li>
+<li>Gérer les rendez-vous et rappels.</li>
+<li>Traiter les paiements et factures.</li>
+<li>Communiquer les mises à jour du service.</li>
+<li>Respecter les obligations légales.</li>
+</ul>
+
+<h2>4. Base Juridique (RGPD)</h2>
+<p>Pour les clients européens, nous traitons les données sur la base de:</p>
+<ul>
+<li><strong>Exécution du contrat:</strong> Pour fournir les services demandés.</li>
+<li><strong>Consentement:</strong> Pour les communications marketing.</li>
+<li><strong>Intérêt légitime:</strong> Pour améliorer nos services.</li>
+<li><strong>Obligation légale:</strong> Pour la conformité fiscale et réglementaire.</li>
+</ul>
+
+<h2>5. Partage des Données</h2>
+<p>Nous partageons les données avec:</p>
+<ul>
+<li><strong>OpenAI:</strong> Pour le traitement des réponses IA (messages traités de manière sécurisée).</li>
+<li><strong>WhatsApp/Meta:</strong> Pour l'envoi et la réception de messages.</li>
+<li><strong>Google:</strong> Pour la gestion du calendrier (si activé).</li>
+</ul>
+<p>Nous ne vendons jamais vos données à des tiers.</p>
+
+<h2>6. Conservation des Données</h2>
+<ul>
+<li><strong>Données de service:</strong> Conservées pendant la durée du contrat + 2 ans.</li>
+<li><strong>Conversations:</strong> Conservées 90 jours pour l'amélioration du service.</li>
+<li><strong>Données fiscales:</strong> Conservées 10 ans comme requis par la loi.</li>
+</ul>
+
+<h2>7. Vos Droits (RGPD)</h2>
+<p>Vous avez le droit de:</p>
+<ul>
+<li><strong>Accès:</strong> Demander une copie de vos données.</li>
+<li><strong>Rectification:</strong> Corriger des données inexactes.</li>
+<li><strong>Effacement:</strong> Demander la suppression des données ("droit à l'oubli").</li>
+<li><strong>Portabilité:</strong> Recevoir les données dans un format lisible.</li>
+<li><strong>Opposition:</strong> Vous opposer à certains traitements.</li>
+</ul>
+<p>Contactez-nous à info@atiendex.com.</p>
+
+<h2>8. Sécurité</h2>
+<p>Nous protégeons vos données avec:</p>
+<ul>
+<li>Chiffrement de bout en bout sur WhatsApp.</li>
+<li>Serveurs sécurisés avec accès limité.</li>
+<li>Sauvegardes régulières et protégées.</li>
+</ul>
+
+<h2>9. Cookies</h2>
+<p>Notre site utilise uniquement des cookies techniques nécessaires au fonctionnement. Nous n'utilisons pas de cookies de suivi ou publicitaires.</p>
+
+<h2>10. Modifications</h2>
+<p>Nous nous réservons le droit de mettre à jour cette politique. Les modifications importantes seront communiquées par email.</p>
+
+<h2>11. Contact</h2>
+<p>Pour les questions de confidentialité, contactez-nous:<br>
+Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+`}
+};
+const langs=['it','es','en','pt','de','fr'];
+let curr='it';
+function detect(){const b=navigator.language?.split('-')[0];return T[b]?b:'it'}
+function set(l){curr=l;document.getElementById('title').textContent=T[l].title;document.getElementById('update').textContent=T[l].update;document.getElementById('content').innerHTML=T[l].content;document.getElementById('currLang').innerHTML=({it:'🇮🇹 Italiano',es:'🇪🇸 Español',en:'🇬🇧 English',pt:'🇧🇷 Português',de:'🇩🇪 Deutsch',fr:'🇫🇷 Français'})[l];document.querySelectorAll('.lang-opt').forEach(o=>o.classList.toggle('active',o.dataset.lang===l))}
+document.addEventListener('DOMContentLoaded',()=>{const drop=document.getElementById('langDrop');langs.forEach(l=>{const btn=document.createElement('button');btn.className='lang-opt';btn.dataset.lang=l;btn.innerHTML=({it:'🇮🇹 Italiano',es:'🇪🇸 Español',en:'🇬🇧 English',pt:'🇧🇷 Português',de:'🇩🇪 Deutsch',fr:'🇫🇷 Français'})[l];btn.onclick=()=>set(l);drop.appendChild(btn)});set(localStorage.getItem('atiendex_lang')||detect())});
+    </script>
+</body>
+</html>
