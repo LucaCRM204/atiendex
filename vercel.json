@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/terminos", "destination": "/terminos.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/privacidad", "destination": "/privacy.html" }
+  ],
+  "trailingSlash": false
+}
