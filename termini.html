@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termini e Condizioni - Atiendex</title>
+    <title>Términos y Condiciones - Atiendex</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root{--red:#E63946;--dark:#0D0D0D;--dark2:#1A1A1A;--gray:#888;--light:#F8F8F8;--white:#FFF}
@@ -12,7 +12,7 @@
         nav{padding:1.5rem 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.1)}
         .logo{font-size:1.5rem;font-weight:700;color:var(--white);text-decoration:none;display:flex;align-items:center;gap:0.5rem}
         .logo-icon{width:40px;height:40px;background:var(--red);border-radius:10px;display:flex;align-items:center;justify-content:center}
-        .lang-sel{position:relative}.lang-btn{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:var(--white);padding:0.5rem 1rem;border-radius:8px;cursor:pointer;display:flex;align-items:center;gap:0.5rem;font-family:inherit}.lang-drop{position:absolute;top:100%;right:0;margin-top:0.5rem;background:var(--dark2);border:1px solid rgba(255,255,255,0.1);border-radius:12px;opacity:0;visibility:hidden;transition:0.3s;z-index:200;min-width:150px}.lang-sel:hover .lang-drop{opacity:1;visibility:visible}.lang-opt{display:flex;align-items:center;gap:0.5rem;padding:0.75rem 1rem;color:var(--light);cursor:pointer;border:none;background:transparent;width:100%;font-family:inherit;font-size:0.95rem;text-align:left}.lang-opt:hover{background:rgba(230,57,70,0.2)}
+        .back-link{color:var(--gray);text-decoration:none;font-size:0.9rem}.back-link:hover{color:var(--white)}
         .container{max-width:800px;margin:0 auto;padding:4rem 2rem}
         h1{font-size:2.5rem;margin-bottom:0.5rem;color:var(--white)}
         .update{color:var(--gray);margin-bottom:3rem}
@@ -29,24 +29,20 @@
 <body>
     <nav>
         <a href="index.html" class="logo"><div class="logo-icon">A</div>Atiendex</a>
-        <div class="lang-sel">
-            <button class="lang-btn" id="currLang">🇮🇹 Italiano</button>
-            <div class="lang-drop" id="langDrop"></div>
-        </div>
+        <a href="index.html" class="back-link" id="backLink">← Volver</a>
     </nav>
     <div class="container">
-        <h1 id="title">Termini e Condizioni</h1>
-        <p class="update" id="update">Ultimo aggiornamento: Gennaio 2026</p>
+        <h1 id="title">Términos y Condiciones</h1>
+        <p class="update" id="update">Última actualización: Enero 2026</p>
         <div id="content"></div>
     </div>
     <footer>© 2026 Atiendex - Alluma Publicidad SRL</footer>
     <script>
 const T={
-it:{title:"Termini e Condizioni",update:"Ultimo aggiornamento: Gennaio 2026",content:`
+it:{title:"Termini e Condizioni",update:"Ultimo aggiornamento: Gennaio 2026",back:"← Indietro",content:`
 <h2>1. Informazioni Generali</h2>
 <p>Questi Termini e Condizioni regolano l'uso dei servizi offerti da <strong>Atiendex</strong>, un marchio di <strong>Alluma Publicidad SRL</strong>, con sede legale in Panamericana Km 42.5, Del Viso, Argentina.</p>
 <p>Email di contatto: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
-
 <h2>2. Descrizione del Servizio</h2>
 <p>Atiendex offre i seguenti servizi:</p>
 <ul>
@@ -54,7 +50,6 @@ it:{title:"Termini e Condizioni",update:"Ultimo aggiornamento: Gennaio 2026",con
 <li><strong>Atiendex + Web:</strong> Include il bot più un sito web professionale per il tuo business.</li>
 <li><strong>Atiendex Total:</strong> Include bot, sito web e gestione pubblicità Meta (Facebook/Instagram).</li>
 </ul>
-
 <h2>3. Prezzi e Pagamento</h2>
 <ul>
 <li>I prezzi sono indicati nella pagina principale e variano secondo la regione.</li>
@@ -62,10 +57,8 @@ it:{title:"Termini e Condizioni",update:"Ultimo aggiornamento: Gennaio 2026",con
 <li>Il pagamento mensile deve essere effettuato entro i primi 5 giorni di ogni mese.</li>
 <li>Accettiamo trasferimenti bancari e altri metodi concordati.</li>
 </ul>
-
 <h2>4. Politica di Rimborso</h2>
 <p><strong>Non si effettuano rimborsi.</strong> Il pagamento del setup e delle mensilità non è rimborsabile in nessun caso.</p>
-
 <h2>5. Cancellazione del Servizio</h2>
 <ul>
 <li>Il cliente può cancellare il servizio in qualsiasi momento.</li>
@@ -73,14 +66,12 @@ it:{title:"Termini e Condizioni",update:"Ultimo aggiornamento: Gennaio 2026",con
 <li>La cancellazione deve essere comunicata via email a info@atiendex.com.</li>
 <li>Dopo la cancellazione, il bot verrà disattivato alla fine del periodo pagato.</li>
 </ul>
-
 <h2>6. Obblighi del Cliente</h2>
 <ul>
 <li>Fornire informazioni accurate sul proprio business.</li>
 <li>Non utilizzare il servizio per attività illegali o spam.</li>
 <li>Mantenere aggiornati i dati di contatto e pagamento.</li>
 </ul>
-
 <h2>7. Limitazione di Responsabilità</h2>
 <p>Atiendex non è responsabile per:</p>
 <ul>
@@ -88,18 +79,15 @@ it:{title:"Termini e Condizioni",update:"Ultimo aggiornamento: Gennaio 2026",con
 <li>Perdita di dati dovuta a cause esterne.</li>
 <li>Danni indiretti derivanti dall'uso del servizio.</li>
 </ul>
-
 <h2>8. Modifiche ai Termini</h2>
 <p>Ci riserviamo il diritto di modificare questi termini. Le modifiche saranno comunicate via email con almeno 15 giorni di anticipo.</p>
-
 <h2>9. Legge Applicabile</h2>
 <p>Questi termini sono regolati dalla legge argentina. Per i clienti europei, si applicano anche le normative locali di protezione del consumatore.</p>
 `},
-es:{title:"Términos y Condiciones",update:"Última actualización: Enero 2026",content:`
+es:{title:"Términos y Condiciones",update:"Última actualización: Enero 2026",back:"← Volver",content:`
 <h2>1. Información General</h2>
 <p>Estos Términos y Condiciones regulan el uso de los servicios ofrecidos por <strong>Atiendex</strong>, una marca de <strong>Alluma Publicidad SRL</strong>, con domicilio legal en Panamericana Km 42.5, Del Viso, Argentina.</p>
 <p>Email de contacto: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
-
 <h2>2. Descripción del Servicio</h2>
 <p>Atiendex ofrece los siguientes servicios:</p>
 <ul>
@@ -107,7 +95,6 @@ es:{title:"Términos y Condiciones",update:"Última actualización: Enero 2026",
 <li><strong>Atiendex + Web:</strong> Incluye el bot más un sitio web profesional para tu negocio.</li>
 <li><strong>Atiendex Total:</strong> Incluye bot, sitio web y gestión de publicidad en Meta (Facebook/Instagram).</li>
 </ul>
-
 <h2>3. Precios y Pago</h2>
 <ul>
 <li>Los precios están indicados en la página principal y varían según la región.</li>
@@ -115,10 +102,8 @@ es:{title:"Términos y Condiciones",update:"Última actualización: Enero 2026",
 <li>El pago mensual debe realizarse dentro de los primeros 5 días de cada mes.</li>
 <li>Aceptamos transferencias bancarias y otros métodos acordados.</li>
 </ul>
-
 <h2>4. Política de Reembolso</h2>
 <p><strong>No se realizan reembolsos.</strong> El pago del setup y las mensualidades no es reembolsable bajo ninguna circunstancia.</p>
-
 <h2>5. Cancelación del Servicio</h2>
 <ul>
 <li>El cliente puede cancelar el servicio en cualquier momento.</li>
@@ -126,14 +111,12 @@ es:{title:"Términos y Condiciones",update:"Última actualización: Enero 2026",
 <li>La cancelación debe comunicarse por email a info@atiendex.com.</li>
 <li>Después de la cancelación, el bot será desactivado al final del período pagado.</li>
 </ul>
-
 <h2>6. Obligaciones del Cliente</h2>
 <ul>
 <li>Proporcionar información precisa sobre su negocio.</li>
 <li>No utilizar el servicio para actividades ilegales o spam.</li>
 <li>Mantener actualizados los datos de contacto y pago.</li>
 </ul>
-
 <h2>7. Limitación de Responsabilidad</h2>
 <p>Atiendex no es responsable por:</p>
 <ul>
@@ -141,18 +124,15 @@ es:{title:"Términos y Condiciones",update:"Última actualización: Enero 2026",
 <li>Pérdida de datos debido a causas externas.</li>
 <li>Daños indirectos derivados del uso del servicio.</li>
 </ul>
-
 <h2>8. Modificaciones a los Términos</h2>
 <p>Nos reservamos el derecho de modificar estos términos. Los cambios serán comunicados por email con al menos 15 días de anticipación.</p>
-
 <h2>9. Ley Aplicable</h2>
 <p>Estos términos se rigen por la ley argentina. Para clientes de otras jurisdicciones, también aplican las normativas locales de protección al consumidor.</p>
 `},
-en:{title:"Terms and Conditions",update:"Last updated: January 2026",content:`
+en:{title:"Terms and Conditions",update:"Last updated: January 2026",back:"← Back",content:`
 <h2>1. General Information</h2>
 <p>These Terms and Conditions govern the use of services offered by <strong>Atiendex</strong>, a brand of <strong>Alluma Publicidad SRL</strong>, with legal address at Panamericana Km 42.5, Del Viso, Argentina.</p>
 <p>Contact email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
-
 <h2>2. Service Description</h2>
 <p>Atiendex offers the following services:</p>
 <ul>
@@ -160,7 +140,6 @@ en:{title:"Terms and Conditions",update:"Last updated: January 2026",content:`
 <li><strong>Atiendex + Web:</strong> Includes the bot plus a professional website for your business.</li>
 <li><strong>Atiendex Total:</strong> Includes bot, website and Meta advertising management (Facebook/Instagram).</li>
 </ul>
-
 <h2>3. Pricing and Payment</h2>
 <ul>
 <li>Prices are listed on the main page and vary by region.</li>
@@ -168,10 +147,8 @@ en:{title:"Terms and Conditions",update:"Last updated: January 2026",content:`
 <li>Monthly payment must be made within the first 5 days of each month.</li>
 <li>We accept bank transfers and other agreed methods.</li>
 </ul>
-
 <h2>4. Refund Policy</h2>
 <p><strong>No refunds are provided.</strong> Setup and monthly payments are non-refundable under any circumstances.</p>
-
 <h2>5. Service Cancellation</h2>
 <ul>
 <li>The client may cancel the service at any time.</li>
@@ -179,14 +156,12 @@ en:{title:"Terms and Conditions",update:"Last updated: January 2026",content:`
 <li>Cancellation must be communicated via email to info@atiendex.com.</li>
 <li>After cancellation, the bot will be deactivated at the end of the paid period.</li>
 </ul>
-
 <h2>6. Client Obligations</h2>
 <ul>
 <li>Provide accurate information about your business.</li>
 <li>Not use the service for illegal activities or spam.</li>
 <li>Keep contact and payment information updated.</li>
 </ul>
-
 <h2>7. Limitation of Liability</h2>
 <p>Atiendex is not responsible for:</p>
 <ul>
@@ -194,18 +169,15 @@ en:{title:"Terms and Conditions",update:"Last updated: January 2026",content:`
 <li>Data loss due to external causes.</li>
 <li>Indirect damages arising from service use.</li>
 </ul>
-
 <h2>8. Changes to Terms</h2>
 <p>We reserve the right to modify these terms. Changes will be communicated via email with at least 15 days notice.</p>
-
 <h2>9. Applicable Law</h2>
 <p>These terms are governed by Argentine law. For clients in other jurisdictions, local consumer protection regulations also apply.</p>
 `},
-pt:{title:"Termos e Condições",update:"Última atualização: Janeiro 2026",content:`
+pt:{title:"Termos e Condições",update:"Última atualização: Janeiro 2026",back:"← Voltar",content:`
 <h2>1. Informações Gerais</h2>
 <p>Estes Termos e Condições regulam o uso dos serviços oferecidos pela <strong>Atiendex</strong>, uma marca da <strong>Alluma Publicidad SRL</strong>, com sede legal em Panamericana Km 42.5, Del Viso, Argentina.</p>
 <p>Email de contato: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
-
 <h2>2. Descrição do Serviço</h2>
 <p>Atiendex oferece os seguintes serviços:</p>
 <ul>
@@ -213,7 +185,6 @@ pt:{title:"Termos e Condições",update:"Última atualização: Janeiro 2026",co
 <li><strong>Atiendex + Web:</strong> Inclui o bot mais um site profissional para seu negócio.</li>
 <li><strong>Atiendex Total:</strong> Inclui bot, site e gestão de publicidade Meta (Facebook/Instagram).</li>
 </ul>
-
 <h2>3. Preços e Pagamento</h2>
 <ul>
 <li>Os preços estão indicados na página principal e variam conforme a região.</li>
@@ -221,10 +192,8 @@ pt:{title:"Termos e Condições",update:"Última atualização: Janeiro 2026",co
 <li>O pagamento mensal deve ser realizado nos primeiros 5 dias de cada mês.</li>
 <li>Aceitamos transferências bancárias e outros métodos acordados.</li>
 </ul>
-
 <h2>4. Política de Reembolso</h2>
 <p><strong>Não realizamos reembolsos.</strong> O pagamento do setup e mensalidades não é reembolsável em nenhuma circunstância.</p>
-
 <h2>5. Cancelamento do Serviço</h2>
 <ul>
 <li>O cliente pode cancelar o serviço a qualquer momento.</li>
@@ -232,14 +201,12 @@ pt:{title:"Termos e Condições",update:"Última atualização: Janeiro 2026",co
 <li>O cancelamento deve ser comunicado por email para info@atiendex.com.</li>
 <li>Após o cancelamento, o bot será desativado no final do período pago.</li>
 </ul>
-
 <h2>6. Obrigações do Cliente</h2>
 <ul>
 <li>Fornecer informações precisas sobre seu negócio.</li>
 <li>Não utilizar o serviço para atividades ilegais ou spam.</li>
 <li>Manter atualizados os dados de contato e pagamento.</li>
 </ul>
-
 <h2>7. Limitação de Responsabilidade</h2>
 <p>Atiendex não é responsável por:</p>
 <ul>
@@ -247,18 +214,15 @@ pt:{title:"Termos e Condições",update:"Última atualização: Janeiro 2026",co
 <li>Perda de dados devido a causas externas.</li>
 <li>Danos indiretos decorrentes do uso do serviço.</li>
 </ul>
-
 <h2>8. Alterações nos Termos</h2>
 <p>Reservamo-nos o direito de modificar estes termos. As alterações serão comunicadas por email com pelo menos 15 dias de antecedência.</p>
-
 <h2>9. Lei Aplicável</h2>
 <p>Estes termos são regidos pela lei argentina. Para clientes em outras jurisdições, também se aplicam as regulamentações locais de proteção ao consumidor.</p>
 `},
-de:{title:"Allgemeine Geschäftsbedingungen",update:"Letzte Aktualisierung: Januar 2026",content:`
+de:{title:"Allgemeine Geschäftsbedingungen",update:"Letzte Aktualisierung: Januar 2026",back:"← Zurück",content:`
 <h2>1. Allgemeine Informationen</h2>
 <p>Diese Allgemeinen Geschäftsbedingungen regeln die Nutzung der von <strong>Atiendex</strong> angebotenen Dienste, einer Marke von <strong>Alluma Publicidad SRL</strong>, mit Sitz in Panamericana Km 42.5, Del Viso, Argentinien.</p>
 <p>Kontakt-E-Mail: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
-
 <h2>2. Servicebeschreibung</h2>
 <p>Atiendex bietet folgende Dienste an:</p>
 <ul>
@@ -266,7 +230,6 @@ de:{title:"Allgemeine Geschäftsbedingungen",update:"Letzte Aktualisierung: Janu
 <li><strong>Atiendex + Web:</strong> Beinhaltet den Bot plus eine professionelle Website für Ihr Geschäft.</li>
 <li><strong>Atiendex Total:</strong> Beinhaltet Bot, Website und Meta-Werbeverwaltung (Facebook/Instagram).</li>
 </ul>
-
 <h2>3. Preise und Zahlung</h2>
 <ul>
 <li>Die Preise sind auf der Hauptseite angegeben und variieren je nach Region.</li>
@@ -274,10 +237,8 @@ de:{title:"Allgemeine Geschäftsbedingungen",update:"Letzte Aktualisierung: Janu
 <li>Die monatliche Zahlung muss innerhalb der ersten 5 Tage jedes Monats erfolgen.</li>
 <li>Wir akzeptieren Banküberweisungen und andere vereinbarte Methoden.</li>
 </ul>
-
 <h2>4. Rückerstattungsrichtlinie</h2>
 <p><strong>Es werden keine Rückerstattungen gewährt.</strong> Setup- und monatliche Zahlungen sind unter keinen Umständen erstattungsfähig.</p>
-
 <h2>5. Servicekündigung</h2>
 <ul>
 <li>Der Kunde kann den Service jederzeit kündigen.</li>
@@ -285,14 +246,12 @@ de:{title:"Allgemeine Geschäftsbedingungen",update:"Letzte Aktualisierung: Janu
 <li>Die Kündigung muss per E-Mail an info@atiendex.com mitgeteilt werden.</li>
 <li>Nach der Kündigung wird der Bot am Ende des bezahlten Zeitraums deaktiviert.</li>
 </ul>
-
 <h2>6. Pflichten des Kunden</h2>
 <ul>
 <li>Genaue Informationen über Ihr Geschäft bereitstellen.</li>
 <li>Den Service nicht für illegale Aktivitäten oder Spam nutzen.</li>
 <li>Kontakt- und Zahlungsinformationen aktuell halten.</li>
 </ul>
-
 <h2>7. Haftungsbeschränkung</h2>
 <p>Atiendex ist nicht verantwortlich für:</p>
 <ul>
@@ -300,18 +259,15 @@ de:{title:"Allgemeine Geschäftsbedingungen",update:"Letzte Aktualisierung: Janu
 <li>Datenverlust durch externe Ursachen.</li>
 <li>Indirekte Schäden aus der Servicenutzung.</li>
 </ul>
-
 <h2>8. Änderungen der Bedingungen</h2>
 <p>Wir behalten uns das Recht vor, diese Bedingungen zu ändern. Änderungen werden per E-Mail mit mindestens 15 Tagen Vorlauf mitgeteilt.</p>
-
 <h2>9. Anwendbares Recht</h2>
 <p>Diese Bedingungen unterliegen argentinischem Recht. Für Kunden in Europa gelten zusätzlich die lokalen Verbraucherschutzvorschriften.</p>
 `},
-fr:{title:"Conditions Générales",update:"Dernière mise à jour: Janvier 2026",content:`
+fr:{title:"Conditions Générales",update:"Dernière mise à jour: Janvier 2026",back:"← Retour",content:`
 <h2>1. Informations Générales</h2>
 <p>Ces Conditions Générales régissent l'utilisation des services offerts par <strong>Atiendex</strong>, une marque de <strong>Alluma Publicidad SRL</strong>, dont le siège social est situé Panamericana Km 42.5, Del Viso, Argentine.</p>
 <p>Email de contact: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
-
 <h2>2. Description du Service</h2>
 <p>Atiendex propose les services suivants:</p>
 <ul>
@@ -319,7 +275,6 @@ fr:{title:"Conditions Générales",update:"Dernière mise à jour: Janvier 2026"
 <li><strong>Atiendex + Web:</strong> Comprend le bot plus un site web professionnel pour votre entreprise.</li>
 <li><strong>Atiendex Total:</strong> Comprend le bot, le site web et la gestion publicitaire Meta (Facebook/Instagram).</li>
 </ul>
-
 <h2>3. Prix et Paiement</h2>
 <ul>
 <li>Les prix sont indiqués sur la page principale et varient selon la région.</li>
@@ -327,10 +282,8 @@ fr:{title:"Conditions Générales",update:"Dernière mise à jour: Janvier 2026"
 <li>Le paiement mensuel doit être effectué dans les 5 premiers jours de chaque mois.</li>
 <li>Nous acceptons les virements bancaires et autres méthodes convenues.</li>
 </ul>
-
 <h2>4. Politique de Remboursement</h2>
 <p><strong>Aucun remboursement n'est effectué.</strong> Les paiements d'installation et mensuels ne sont remboursables en aucune circonstance.</p>
-
 <h2>5. Résiliation du Service</h2>
 <ul>
 <li>Le client peut résilier le service à tout moment.</li>
@@ -338,14 +291,12 @@ fr:{title:"Conditions Générales",update:"Dernière mise à jour: Janvier 2026"
 <li>La résiliation doit être communiquée par email à info@atiendex.com.</li>
 <li>Après la résiliation, le bot sera désactivé à la fin de la période payée.</li>
 </ul>
-
 <h2>6. Obligations du Client</h2>
 <ul>
 <li>Fournir des informations exactes sur votre entreprise.</li>
 <li>Ne pas utiliser le service pour des activités illégales ou du spam.</li>
 <li>Maintenir à jour les informations de contact et de paiement.</li>
 </ul>
-
 <h2>7. Limitation de Responsabilité</h2>
 <p>Atiendex n'est pas responsable de:</p>
 <ul>
@@ -353,19 +304,33 @@ fr:{title:"Conditions Générales",update:"Dernière mise à jour: Janvier 2026"
 <li>Perte de données due à des causes externes.</li>
 <li>Dommages indirects résultant de l'utilisation du service.</li>
 </ul>
-
 <h2>8. Modifications des Conditions</h2>
 <p>Nous nous réservons le droit de modifier ces conditions. Les modifications seront communiquées par email avec un préavis d'au moins 15 jours.</p>
-
 <h2>9. Loi Applicable</h2>
 <p>Ces conditions sont régies par la loi argentine. Pour les clients européens, les réglementations locales de protection des consommateurs s'appliquent également.</p>
 `}
 };
-const langs=['it','es','en','pt','de','fr'];
-let curr='it';
-function detect(){const b=navigator.language?.split('-')[0];return T[b]?b:'it'}
-function set(l){curr=l;document.getElementById('title').textContent=T[l].title;document.getElementById('update').textContent=T[l].update;document.getElementById('content').innerHTML=T[l].content;document.getElementById('currLang').innerHTML=({it:'🇮🇹 Italiano',es:'🇪🇸 Español',en:'🇬🇧 English',pt:'🇧🇷 Português',de:'🇩🇪 Deutsch',fr:'🇫🇷 Français'})[l];document.querySelectorAll('.lang-opt').forEach(o=>o.classList.toggle('active',o.dataset.lang===l))}
-document.addEventListener('DOMContentLoaded',()=>{const drop=document.getElementById('langDrop');langs.forEach(l=>{const btn=document.createElement('button');btn.className='lang-opt';btn.dataset.lang=l;btn.innerHTML=({it:'🇮🇹 Italiano',es:'🇪🇸 Español',en:'🇬🇧 English',pt:'🇧🇷 Português',de:'🇩🇪 Deutsch',fr:'🇫🇷 Français'})[l];btn.onclick=()=>set(l);drop.appendChild(btn)});set(localStorage.getItem('atiendex_lang')||detect())});
+const langMap={ar:'es',us:'en'};
+function getLang(){
+    const saved=localStorage.getItem('atiendex_lang');
+    if(saved)return langMap[saved]||saved;
+    const b=navigator.language?.toLowerCase();
+    if(b.startsWith('pt'))return'pt';
+    if(b.startsWith('es'))return'es';
+    if(b.startsWith('en'))return'en';
+    if(b.startsWith('de'))return'de';
+    if(b.startsWith('fr'))return'fr';
+    return'it';
+}
+document.addEventListener('DOMContentLoaded',()=>{
+    let l=getLang();
+    if(!T[l])l='es';
+    document.getElementById('title').textContent=T[l].title;
+    document.getElementById('update').textContent=T[l].update;
+    document.getElementById('content').innerHTML=T[l].content;
+    document.getElementById('backLink').textContent=T[l].back;
+    document.documentElement.lang=l;
+});
     </script>
 </body>
 </html>
