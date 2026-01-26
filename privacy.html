@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Atiendex</title>
+    <title>Política de Privacidad - Atiendex</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root{--red:#E63946;--dark:#0D0D0D;--dark2:#1A1A1A;--gray:#888;--light:#F8F8F8;--white:#FFF}
@@ -12,7 +12,7 @@
         nav{padding:1.5rem 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.1)}
         .logo{font-size:1.5rem;font-weight:700;color:var(--white);text-decoration:none;display:flex;align-items:center;gap:0.5rem}
         .logo-icon{width:40px;height:40px;background:var(--red);border-radius:10px;display:flex;align-items:center;justify-content:center}
-        .lang-sel{position:relative}.lang-btn{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:var(--white);padding:0.5rem 1rem;border-radius:8px;cursor:pointer;display:flex;align-items:center;gap:0.5rem;font-family:inherit}.lang-drop{position:absolute;top:100%;right:0;margin-top:0.5rem;background:var(--dark2);border:1px solid rgba(255,255,255,0.1);border-radius:12px;opacity:0;visibility:hidden;transition:0.3s;z-index:200;min-width:150px}.lang-sel:hover .lang-drop{opacity:1;visibility:visible}.lang-opt{display:flex;align-items:center;gap:0.5rem;padding:0.75rem 1rem;color:var(--light);cursor:pointer;border:none;background:transparent;width:100%;font-family:inherit;font-size:0.95rem;text-align:left}.lang-opt:hover{background:rgba(230,57,70,0.2)}
+        .back-link{color:var(--gray);text-decoration:none;font-size:0.9rem}.back-link:hover{color:var(--white)}
         .container{max-width:800px;margin:0 auto;padding:4rem 2rem}
         h1{font-size:2.5rem;margin-bottom:0.5rem;color:var(--white)}
         .update{color:var(--gray);margin-bottom:3rem}
@@ -29,25 +29,19 @@
 <body>
     <nav>
         <a href="index.html" class="logo"><div class="logo-icon">A</div>Atiendex</a>
-        <div class="lang-sel">
-            <button class="lang-btn" id="currLang">🇮🇹 Italiano</button>
-            <div class="lang-drop" id="langDrop"></div>
-        </div>
+        <a href="index.html" class="back-link" id="backLink">← Volver</a>
     </nav>
     <div class="container">
-        <h1 id="title">Politica sulla Privacy</h1>
-        <p class="update" id="update">Ultimo aggiornamento: Gennaio 2026</p>
+        <h1 id="title">Política de Privacidad</h1>
+        <p class="update" id="update">Última actualización: Enero 2026</p>
         <div id="content"></div>
     </div>
     <footer>© 2026 Atiendex - Alluma Publicidad SRL</footer>
     <script>
 const T={
-it:{title:"Politica sulla Privacy",update:"Ultimo aggiornamento: Gennaio 2026",content:`
+it:{title:"Politica sulla Privacy",update:"Ultimo aggiornamento: Gennaio 2026",back:"← Indietro",content:`
 <h2>1. Titolare del Trattamento</h2>
-<p><strong>Alluma Publicidad SRL</strong><br>
-Panamericana Km 42.5, Del Viso, Argentina<br>
-Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
-
+<p><strong>Alluma Publicidad SRL</strong><br>Panamericana Km 42.5, Del Viso, Argentina<br>Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <h2>2. Dati che Raccogliamo</h2>
 <p>Raccogliamo i seguenti tipi di dati:</p>
 <ul>
@@ -57,7 +51,6 @@ Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li><strong>Conversazioni:</strong> Messaggi scambiati tra il bot e i clienti per migliorare il servizio.</li>
 <li><strong>Dati di pagamento:</strong> Informazioni necessarie per la fatturazione.</li>
 </ul>
-
 <h2>3. Finalità del Trattamento</h2>
 <p>Utilizziamo i dati per:</p>
 <ul>
@@ -67,7 +60,6 @@ Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li>Comunicare aggiornamenti sul servizio.</li>
 <li>Rispettare obblighi legali.</li>
 </ul>
-
 <h2>4. Base Giuridica (GDPR)</h2>
 <p>Per i clienti europei, trattiamo i dati sulla base di:</p>
 <ul>
@@ -76,58 +68,40 @@ Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li><strong>Legittimo interesse:</strong> Per migliorare i nostri servizi.</li>
 <li><strong>Obbligo legale:</strong> Per conformità fiscale e normativa.</li>
 </ul>
-
 <h2>5. Condivisione dei Dati</h2>
 <p>Condividiamo i dati con:</p>
 <ul>
-<li><strong>OpenAI:</strong> Per l'elaborazione delle risposte AI (i messaggi sono processati in modo sicuro).</li>
+<li><strong>OpenAI:</strong> Per l'elaborazione delle risposte AI.</li>
 <li><strong>WhatsApp/Meta:</strong> Per l'invio e ricezione dei messaggi.</li>
-<li><strong>Google:</strong> Per la gestione del calendario (se attivato).</li>
+<li><strong>Google:</strong> Per la gestione del calendario.</li>
 </ul>
 <p>Non vendiamo mai i tuoi dati a terzi.</p>
-
 <h2>6. Conservazione dei Dati</h2>
 <ul>
 <li><strong>Dati del servizio:</strong> Conservati per la durata del contratto + 2 anni.</li>
-<li><strong>Conversazioni:</strong> Conservate per 90 giorni per miglioramento del servizio.</li>
-<li><strong>Dati fiscali:</strong> Conservati per 10 anni come richiesto dalla legge.</li>
+<li><strong>Conversazioni:</strong> Conservate per 90 giorni.</li>
+<li><strong>Dati fiscali:</strong> Conservati per 10 anni.</li>
 </ul>
-
 <h2>7. I Tuoi Diritti (GDPR)</h2>
 <p>Hai il diritto di:</p>
 <ul>
 <li><strong>Accesso:</strong> Richiedere una copia dei tuoi dati.</li>
 <li><strong>Rettifica:</strong> Correggere dati inesatti.</li>
-<li><strong>Cancellazione:</strong> Richiedere l'eliminazione dei dati ("diritto all'oblio").</li>
+<li><strong>Cancellazione:</strong> Richiedere l'eliminazione dei dati.</li>
 <li><strong>Portabilità:</strong> Ricevere i dati in formato leggibile.</li>
 <li><strong>Opposizione:</strong> Opporti a determinati trattamenti.</li>
 </ul>
 <p>Per esercitare questi diritti, contattaci a info@atiendex.com.</p>
-
 <h2>8. Sicurezza</h2>
-<p>Proteggiamo i tuoi dati con:</p>
-<ul>
-<li>Crittografia end-to-end su WhatsApp.</li>
-<li>Server sicuri con accesso limitato.</li>
-<li>Backup regolari e protetti.</li>
-</ul>
-
+<p>Proteggiamo i tuoi dati con crittografia end-to-end, server sicuri e backup regolari.</p>
 <h2>9. Cookie</h2>
-<p>Il nostro sito utilizza solo cookie tecnici necessari per il funzionamento. Non utilizziamo cookie di tracciamento o pubblicità.</p>
-
-<h2>10. Modifiche alla Privacy Policy</h2>
-<p>Ci riserviamo il diritto di aggiornare questa policy. Le modifiche significative saranno comunicate via email.</p>
-
-<h2>11. Contatti</h2>
-<p>Per domande sulla privacy, contattaci:<br>
-Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+<p>Utilizziamo solo cookie tecnici necessari. Non utilizziamo cookie di tracciamento.</p>
+<h2>10. Contatti</h2>
+<p>Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 `},
-es:{title:"Política de Privacidad",update:"Última actualización: Enero 2026",content:`
+es:{title:"Política de Privacidad",update:"Última actualización: Enero 2026",back:"← Volver",content:`
 <h2>1. Responsable del Tratamiento</h2>
-<p><strong>Alluma Publicidad SRL</strong><br>
-Panamericana Km 42.5, Del Viso, Argentina<br>
-Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
-
+<p><strong>Alluma Publicidad SRL</strong><br>Panamericana Km 42.5, Del Viso, Argentina<br>Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <h2>2. Datos que Recopilamos</h2>
 <p>Recopilamos los siguientes tipos de datos:</p>
 <ul>
@@ -137,7 +111,6 @@ Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li><strong>Conversaciones:</strong> Mensajes intercambiados entre el bot y los clientes para mejorar el servicio.</li>
 <li><strong>Datos de pago:</strong> Información necesaria para la facturación.</li>
 </ul>
-
 <h2>3. Finalidad del Tratamiento</h2>
 <p>Utilizamos los datos para:</p>
 <ul>
@@ -147,23 +120,20 @@ Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li>Comunicar actualizaciones del servicio.</li>
 <li>Cumplir con obligaciones legales.</li>
 </ul>
-
 <h2>4. Compartición de Datos</h2>
 <p>Compartimos datos con:</p>
 <ul>
-<li><strong>OpenAI:</strong> Para el procesamiento de respuestas IA (los mensajes se procesan de forma segura).</li>
+<li><strong>OpenAI:</strong> Para el procesamiento de respuestas IA.</li>
 <li><strong>WhatsApp/Meta:</strong> Para el envío y recepción de mensajes.</li>
-<li><strong>Google:</strong> Para la gestión del calendario (si está activado).</li>
+<li><strong>Google:</strong> Para la gestión del calendario.</li>
 </ul>
 <p>Nunca vendemos tus datos a terceros.</p>
-
 <h2>5. Conservación de Datos</h2>
 <ul>
 <li><strong>Datos del servicio:</strong> Conservados durante la duración del contrato + 2 años.</li>
-<li><strong>Conversaciones:</strong> Conservadas por 90 días para mejora del servicio.</li>
-<li><strong>Datos fiscales:</strong> Conservados por 10 años según la ley.</li>
+<li><strong>Conversaciones:</strong> Conservadas por 90 días.</li>
+<li><strong>Datos fiscales:</strong> Conservados por 10 años.</li>
 </ul>
-
 <h2>6. Tus Derechos</h2>
 <p>Tenés derecho a:</p>
 <ul>
@@ -173,31 +143,16 @@ Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li><strong>Portabilidad:</strong> Recibir los datos en formato legible.</li>
 </ul>
 <p>Para ejercer estos derechos, contactanos a info@atiendex.com.</p>
-
 <h2>7. Seguridad</h2>
-<p>Protegemos tus datos con:</p>
-<ul>
-<li>Encriptación end-to-end en WhatsApp.</li>
-<li>Servidores seguros con acceso limitado.</li>
-<li>Backups regulares y protegidos.</li>
-</ul>
-
+<p>Protegemos tus datos con encriptación end-to-end, servidores seguros y backups regulares.</p>
 <h2>8. Cookies</h2>
-<p>Nuestro sitio utiliza solo cookies técnicas necesarias para el funcionamiento. No utilizamos cookies de seguimiento o publicidad.</p>
-
-<h2>9. Modificaciones</h2>
-<p>Nos reservamos el derecho de actualizar esta política. Los cambios significativos serán comunicados por email.</p>
-
-<h2>10. Contacto</h2>
-<p>Para preguntas sobre privacidad, contactanos:<br>
-Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+<p>Usamos solo cookies técnicas necesarias. No usamos cookies de seguimiento.</p>
+<h2>9. Contacto</h2>
+<p>Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 `},
-en:{title:"Privacy Policy",update:"Last updated: January 2026",content:`
+en:{title:"Privacy Policy",update:"Last updated: January 2026",back:"← Back",content:`
 <h2>1. Data Controller</h2>
-<p><strong>Alluma Publicidad SRL</strong><br>
-Panamericana Km 42.5, Del Viso, Argentina<br>
-Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
-
+<p><strong>Alluma Publicidad SRL</strong><br>Panamericana Km 42.5, Del Viso, Argentina<br>Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <h2>2. Data We Collect</h2>
 <p>We collect the following types of data:</p>
 <ul>
@@ -207,7 +162,6 @@ Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li><strong>Conversations:</strong> Messages exchanged between the bot and customers to improve service.</li>
 <li><strong>Payment data:</strong> Information necessary for billing.</li>
 </ul>
-
 <h2>3. Purpose of Processing</h2>
 <p>We use data to:</p>
 <ul>
@@ -217,7 +171,6 @@ Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li>Communicate service updates.</li>
 <li>Comply with legal obligations.</li>
 </ul>
-
 <h2>4. Legal Basis (GDPR)</h2>
 <p>For European customers, we process data based on:</p>
 <ul>
@@ -226,58 +179,40 @@ Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li><strong>Legitimate interest:</strong> To improve our services.</li>
 <li><strong>Legal obligation:</strong> For tax and regulatory compliance.</li>
 </ul>
-
 <h2>5. Data Sharing</h2>
 <p>We share data with:</p>
 <ul>
-<li><strong>OpenAI:</strong> For AI response processing (messages are processed securely).</li>
+<li><strong>OpenAI:</strong> For AI response processing.</li>
 <li><strong>WhatsApp/Meta:</strong> For sending and receiving messages.</li>
-<li><strong>Google:</strong> For calendar management (if enabled).</li>
+<li><strong>Google:</strong> For calendar management.</li>
 </ul>
 <p>We never sell your data to third parties.</p>
-
 <h2>6. Data Retention</h2>
 <ul>
 <li><strong>Service data:</strong> Retained for contract duration + 2 years.</li>
-<li><strong>Conversations:</strong> Retained for 90 days for service improvement.</li>
-<li><strong>Tax data:</strong> Retained for 10 years as required by law.</li>
+<li><strong>Conversations:</strong> Retained for 90 days.</li>
+<li><strong>Tax data:</strong> Retained for 10 years.</li>
 </ul>
-
 <h2>7. Your Rights (GDPR)</h2>
 <p>You have the right to:</p>
 <ul>
 <li><strong>Access:</strong> Request a copy of your data.</li>
 <li><strong>Rectification:</strong> Correct inaccurate data.</li>
-<li><strong>Erasure:</strong> Request deletion of data ("right to be forgotten").</li>
+<li><strong>Erasure:</strong> Request deletion of data.</li>
 <li><strong>Portability:</strong> Receive data in readable format.</li>
 <li><strong>Object:</strong> Object to certain processing.</li>
 </ul>
-<p>To exercise these rights, contact us at info@atiendex.com.</p>
-
+<p>Contact us at info@atiendex.com.</p>
 <h2>8. Security</h2>
-<p>We protect your data with:</p>
-<ul>
-<li>End-to-end encryption on WhatsApp.</li>
-<li>Secure servers with limited access.</li>
-<li>Regular protected backups.</li>
-</ul>
-
+<p>We protect your data with end-to-end encryption, secure servers and regular backups.</p>
 <h2>9. Cookies</h2>
-<p>Our site uses only technical cookies necessary for operation. We do not use tracking or advertising cookies.</p>
-
-<h2>10. Changes to Privacy Policy</h2>
-<p>We reserve the right to update this policy. Significant changes will be communicated via email.</p>
-
-<h2>11. Contact</h2>
-<p>For privacy questions, contact us:<br>
-Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+<p>We use only necessary technical cookies. No tracking cookies.</p>
+<h2>10. Contact</h2>
+<p>Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 `},
-pt:{title:"Política de Privacidade",update:"Última atualização: Janeiro 2026",content:`
+pt:{title:"Política de Privacidade",update:"Última atualização: Janeiro 2026",back:"← Voltar",content:`
 <h2>1. Controlador de Dados</h2>
-<p><strong>Alluma Publicidad SRL</strong><br>
-Panamericana Km 42.5, Del Viso, Argentina<br>
-Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
-
+<p><strong>Alluma Publicidad SRL</strong><br>Panamericana Km 42.5, Del Viso, Argentina<br>Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <h2>2. Dados que Coletamos</h2>
 <p>Coletamos os seguintes tipos de dados:</p>
 <ul>
@@ -287,7 +222,6 @@ Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li><strong>Conversas:</strong> Mensagens trocadas entre o bot e os clientes para melhorar o serviço.</li>
 <li><strong>Dados de pagamento:</strong> Informações necessárias para faturamento.</li>
 </ul>
-
 <h2>3. Finalidade do Tratamento</h2>
 <p>Utilizamos os dados para:</p>
 <ul>
@@ -297,23 +231,20 @@ Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li>Comunicar atualizações do serviço.</li>
 <li>Cumprir obrigações legais.</li>
 </ul>
-
 <h2>4. Compartilhamento de Dados</h2>
 <p>Compartilhamos dados com:</p>
 <ul>
-<li><strong>OpenAI:</strong> Para processamento de respostas IA (mensagens são processadas de forma segura).</li>
+<li><strong>OpenAI:</strong> Para processamento de respostas IA.</li>
 <li><strong>WhatsApp/Meta:</strong> Para envio e recebimento de mensagens.</li>
-<li><strong>Google:</strong> Para gerenciamento de calendário (se ativado).</li>
+<li><strong>Google:</strong> Para gerenciamento de calendário.</li>
 </ul>
 <p>Nunca vendemos seus dados a terceiros.</p>
-
 <h2>5. Retenção de Dados</h2>
 <ul>
 <li><strong>Dados do serviço:</strong> Retidos durante a duração do contrato + 2 anos.</li>
-<li><strong>Conversas:</strong> Retidas por 90 dias para melhoria do serviço.</li>
-<li><strong>Dados fiscais:</strong> Retidos por 10 anos conforme exigido por lei.</li>
+<li><strong>Conversas:</strong> Retidas por 90 dias.</li>
+<li><strong>Dados fiscais:</strong> Retidos por 10 anos.</li>
 </ul>
-
 <h2>6. Seus Direitos</h2>
 <p>Você tem direito a:</p>
 <ul>
@@ -322,32 +253,17 @@ Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li><strong>Exclusão:</strong> Solicitar a eliminação dos dados.</li>
 <li><strong>Portabilidade:</strong> Receber dados em formato legível.</li>
 </ul>
-<p>Para exercer esses direitos, contate-nos em info@atiendex.com.</p>
-
+<p>Contate-nos em info@atiendex.com.</p>
 <h2>7. Segurança</h2>
-<p>Protegemos seus dados com:</p>
-<ul>
-<li>Criptografia de ponta a ponta no WhatsApp.</li>
-<li>Servidores seguros com acesso limitado.</li>
-<li>Backups regulares e protegidos.</li>
-</ul>
-
+<p>Protegemos seus dados com criptografia de ponta a ponta, servidores seguros e backups regulares.</p>
 <h2>8. Cookies</h2>
-<p>Nosso site usa apenas cookies técnicos necessários para operação. Não usamos cookies de rastreamento ou publicidade.</p>
-
-<h2>9. Alterações</h2>
-<p>Reservamo-nos o direito de atualizar esta política. Mudanças significativas serão comunicadas por email.</p>
-
-<h2>10. Contato</h2>
-<p>Para perguntas sobre privacidade, contate-nos:<br>
-Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+<p>Usamos apenas cookies técnicos necessários. Sem cookies de rastreamento.</p>
+<h2>9. Contato</h2>
+<p>Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 `},
-de:{title:"Datenschutzrichtlinie",update:"Letzte Aktualisierung: Januar 2026",content:`
+de:{title:"Datenschutzrichtlinie",update:"Letzte Aktualisierung: Januar 2026",back:"← Zurück",content:`
 <h2>1. Verantwortlicher</h2>
-<p><strong>Alluma Publicidad SRL</strong><br>
-Panamericana Km 42.5, Del Viso, Argentinien<br>
-E-Mail: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
-
+<p><strong>Alluma Publicidad SRL</strong><br>Panamericana Km 42.5, Del Viso, Argentinien<br>E-Mail: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <h2>2. Daten, die wir erheben</h2>
 <p>Wir erheben folgende Arten von Daten:</p>
 <ul>
@@ -357,7 +273,6 @@ E-Mail: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li><strong>Gespräche:</strong> Nachrichten zwischen Bot und Kunden zur Serviceverbesserung.</li>
 <li><strong>Zahlungsdaten:</strong> Für die Rechnungsstellung erforderliche Informationen.</li>
 </ul>
-
 <h2>3. Zweck der Verarbeitung</h2>
 <p>Wir verwenden Daten um:</p>
 <ul>
@@ -367,7 +282,6 @@ E-Mail: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li>Service-Updates zu kommunizieren.</li>
 <li>Gesetzliche Verpflichtungen zu erfüllen.</li>
 </ul>
-
 <h2>4. Rechtsgrundlage (DSGVO)</h2>
 <p>Für europäische Kunden verarbeiten wir Daten auf Basis von:</p>
 <ul>
@@ -376,58 +290,40 @@ E-Mail: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li><strong>Berechtigtes Interesse:</strong> Um unsere Dienste zu verbessern.</li>
 <li><strong>Rechtliche Verpflichtung:</strong> Für steuerliche und regulatorische Compliance.</li>
 </ul>
-
 <h2>5. Datenweitergabe</h2>
 <p>Wir teilen Daten mit:</p>
 <ul>
-<li><strong>OpenAI:</strong> Für KI-Antwortverarbeitung (Nachrichten werden sicher verarbeitet).</li>
+<li><strong>OpenAI:</strong> Für KI-Antwortverarbeitung.</li>
 <li><strong>WhatsApp/Meta:</strong> Für Senden und Empfangen von Nachrichten.</li>
-<li><strong>Google:</strong> Für Kalenderverwaltung (falls aktiviert).</li>
+<li><strong>Google:</strong> Für Kalenderverwaltung.</li>
 </ul>
 <p>Wir verkaufen Ihre Daten niemals an Dritte.</p>
-
 <h2>6. Datenspeicherung</h2>
 <ul>
 <li><strong>Servicedaten:</strong> Aufbewahrt für Vertragsdauer + 2 Jahre.</li>
-<li><strong>Gespräche:</strong> 90 Tage zur Serviceverbesserung aufbewahrt.</li>
-<li><strong>Steuerdaten:</strong> 10 Jahre wie gesetzlich vorgeschrieben.</li>
+<li><strong>Gespräche:</strong> 90 Tage aufbewahrt.</li>
+<li><strong>Steuerdaten:</strong> 10 Jahre aufbewahrt.</li>
 </ul>
-
 <h2>7. Ihre Rechte (DSGVO)</h2>
 <p>Sie haben das Recht auf:</p>
 <ul>
 <li><strong>Auskunft:</strong> Kopie Ihrer Daten anfordern.</li>
 <li><strong>Berichtigung:</strong> Unrichtige Daten korrigieren.</li>
-<li><strong>Löschung:</strong> Datenlöschung verlangen ("Recht auf Vergessenwerden").</li>
+<li><strong>Löschung:</strong> Datenlöschung verlangen.</li>
 <li><strong>Datenübertragbarkeit:</strong> Daten in lesbarem Format erhalten.</li>
 <li><strong>Widerspruch:</strong> Bestimmten Verarbeitungen widersprechen.</li>
 </ul>
 <p>Kontaktieren Sie uns unter info@atiendex.com.</p>
-
 <h2>8. Sicherheit</h2>
-<p>Wir schützen Ihre Daten mit:</p>
-<ul>
-<li>Ende-zu-Ende-Verschlüsselung bei WhatsApp.</li>
-<li>Sicheren Servern mit beschränktem Zugang.</li>
-<li>Regelmäßigen geschützten Backups.</li>
-</ul>
-
+<p>Wir schützen Ihre Daten mit Ende-zu-Ende-Verschlüsselung, sicheren Servern und regelmäßigen Backups.</p>
 <h2>9. Cookies</h2>
-<p>Unsere Website verwendet nur technisch notwendige Cookies. Wir verwenden keine Tracking- oder Werbe-Cookies.</p>
-
-<h2>10. Änderungen</h2>
-<p>Wir behalten uns das Recht vor, diese Richtlinie zu aktualisieren. Wesentliche Änderungen werden per E-Mail mitgeteilt.</p>
-
-<h2>11. Kontakt</h2>
-<p>Bei Datenschutzfragen kontaktieren Sie uns:<br>
-E-Mail: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+<p>Wir verwenden nur technisch notwendige Cookies. Keine Tracking-Cookies.</p>
+<h2>10. Kontakt</h2>
+<p>E-Mail: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 `},
-fr:{title:"Politique de Confidentialité",update:"Dernière mise à jour: Janvier 2026",content:`
+fr:{title:"Politique de Confidentialité",update:"Dernière mise à jour: Janvier 2026",back:"← Retour",content:`
 <h2>1. Responsable du Traitement</h2>
-<p><strong>Alluma Publicidad SRL</strong><br>
-Panamericana Km 42.5, Del Viso, Argentine<br>
-Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
-
+<p><strong>Alluma Publicidad SRL</strong><br>Panamericana Km 42.5, Del Viso, Argentine<br>Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <h2>2. Données que nous Collectons</h2>
 <p>Nous collectons les types de données suivants:</p>
 <ul>
@@ -437,7 +333,6 @@ Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li><strong>Conversations:</strong> Messages échangés entre le bot et les clients pour améliorer le service.</li>
 <li><strong>Données de paiement:</strong> Informations nécessaires à la facturation.</li>
 </ul>
-
 <h2>3. Finalité du Traitement</h2>
 <p>Nous utilisons les données pour:</p>
 <ul>
@@ -447,7 +342,6 @@ Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li>Communiquer les mises à jour du service.</li>
 <li>Respecter les obligations légales.</li>
 </ul>
-
 <h2>4. Base Juridique (RGPD)</h2>
 <p>Pour les clients européens, nous traitons les données sur la base de:</p>
 <ul>
@@ -456,58 +350,59 @@ Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 <li><strong>Intérêt légitime:</strong> Pour améliorer nos services.</li>
 <li><strong>Obligation légale:</strong> Pour la conformité fiscale et réglementaire.</li>
 </ul>
-
 <h2>5. Partage des Données</h2>
 <p>Nous partageons les données avec:</p>
 <ul>
-<li><strong>OpenAI:</strong> Pour le traitement des réponses IA (messages traités de manière sécurisée).</li>
+<li><strong>OpenAI:</strong> Pour le traitement des réponses IA.</li>
 <li><strong>WhatsApp/Meta:</strong> Pour l'envoi et la réception de messages.</li>
-<li><strong>Google:</strong> Pour la gestion du calendrier (si activé).</li>
+<li><strong>Google:</strong> Pour la gestion du calendrier.</li>
 </ul>
 <p>Nous ne vendons jamais vos données à des tiers.</p>
-
 <h2>6. Conservation des Données</h2>
 <ul>
 <li><strong>Données de service:</strong> Conservées pendant la durée du contrat + 2 ans.</li>
-<li><strong>Conversations:</strong> Conservées 90 jours pour l'amélioration du service.</li>
-<li><strong>Données fiscales:</strong> Conservées 10 ans comme requis par la loi.</li>
+<li><strong>Conversations:</strong> Conservées 90 jours.</li>
+<li><strong>Données fiscales:</strong> Conservées 10 ans.</li>
 </ul>
-
 <h2>7. Vos Droits (RGPD)</h2>
 <p>Vous avez le droit de:</p>
 <ul>
 <li><strong>Accès:</strong> Demander une copie de vos données.</li>
 <li><strong>Rectification:</strong> Corriger des données inexactes.</li>
-<li><strong>Effacement:</strong> Demander la suppression des données ("droit à l'oubli").</li>
+<li><strong>Effacement:</strong> Demander la suppression des données.</li>
 <li><strong>Portabilité:</strong> Recevoir les données dans un format lisible.</li>
 <li><strong>Opposition:</strong> Vous opposer à certains traitements.</li>
 </ul>
 <p>Contactez-nous à info@atiendex.com.</p>
-
 <h2>8. Sécurité</h2>
-<p>Nous protégeons vos données avec:</p>
-<ul>
-<li>Chiffrement de bout en bout sur WhatsApp.</li>
-<li>Serveurs sécurisés avec accès limité.</li>
-<li>Sauvegardes régulières et protégées.</li>
-</ul>
-
+<p>Nous protégeons vos données avec chiffrement de bout en bout, serveurs sécurisés et sauvegardes régulières.</p>
 <h2>9. Cookies</h2>
-<p>Notre site utilise uniquement des cookies techniques nécessaires au fonctionnement. Nous n'utilisons pas de cookies de suivi ou publicitaires.</p>
-
-<h2>10. Modifications</h2>
-<p>Nous nous réservons le droit de mettre à jour cette politique. Les modifications importantes seront communiquées par email.</p>
-
-<h2>11. Contact</h2>
-<p>Pour les questions de confidentialité, contactez-nous:<br>
-Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
+<p>Nous utilisons uniquement des cookies techniques nécessaires. Pas de cookies de suivi.</p>
+<h2>10. Contact</h2>
+<p>Email: <a href="mailto:info@atiendex.com">info@atiendex.com</a></p>
 `}
 };
-const langNames={it:'🇮🇹 Italiano',es:'🇪🇸 Español',en:'🇬🇧 English',pt:'🇧🇷 Português',de:'🇩🇪 Deutsch',fr:'🇫🇷 Français',ar:'🇦🇷 Argentina',us:'🇺🇸 USA'};
 const langMap={ar:'es',us:'en'};
-function detect(){const b=navigator.language?.toLowerCase();if(b.startsWith('pt'))return'pt';if(b.startsWith('es'))return'es';if(b.startsWith('en'))return'en';if(b.startsWith('de'))return'de';if(b.startsWith('fr'))return'fr';return'it'}
-function set(l){const tl=langMap[l]||l;if(!T[tl])return set('it');document.getElementById('title').textContent=T[tl].title;document.getElementById('update').textContent=T[tl].update;document.getElementById('content').innerHTML=T[tl].content;document.getElementById('currLang').innerHTML=langNames[l]||langNames[tl];document.querySelector('.lang-sel').style.display='none'}
-document.addEventListener('DOMContentLoaded',()=>{const saved=localStorage.getItem('atiendex_lang');set(saved||detect())});
+function getLang(){
+    const saved=localStorage.getItem('atiendex_lang');
+    if(saved)return langMap[saved]||saved;
+    const b=navigator.language?.toLowerCase();
+    if(b.startsWith('pt'))return'pt';
+    if(b.startsWith('es'))return'es';
+    if(b.startsWith('en'))return'en';
+    if(b.startsWith('de'))return'de';
+    if(b.startsWith('fr'))return'fr';
+    return'it';
+}
+document.addEventListener('DOMContentLoaded',()=>{
+    let l=getLang();
+    if(!T[l])l='es';
+    document.getElementById('title').textContent=T[l].title;
+    document.getElementById('update').textContent=T[l].update;
+    document.getElementById('content').innerHTML=T[l].content;
+    document.getElementById('backLink').textContent=T[l].back;
+    document.documentElement.lang=l;
+});
     </script>
 </body>
 </html>
